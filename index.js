@@ -57,7 +57,7 @@ function addMember() {
         }])
         .then(function({roleInfo, moreMembers}) {
             let newMember;
-            if (role === "employee") {
+            if (role === "Employee") {
                 newMember = new Employee(name, id, email, roleInfo)
             } else if (role === "Engineer") {
                 newMember = new Engineer(name, id, email, roleInfo);
