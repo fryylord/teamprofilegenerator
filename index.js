@@ -39,7 +39,7 @@ function createHtml() {
 function addMember() {
     inquirer.prompt([{
         type: 'input',
-        message: "Enter member's name",
+        message: "Enter member's name: ",
         name: "name",
         validate: nameInput => {
             if (nameInput) {
@@ -51,7 +51,7 @@ function addMember() {
     },},
     {
         type: "list",
-        message: "Select member's role",
+        message: "Select member's role: ",
         choices: [
             "Engineer",
             "Intern",
@@ -61,7 +61,7 @@ function addMember() {
     },
     {
         type: 'input',
-        message: "Enter team member's id",
+        message: "Enter team member's id: ",
         name: "id",
         validate: idInput => {
             if (idInput) {
@@ -73,7 +73,7 @@ function addMember() {
     },},
     {
         type: 'input',
-        message: "Enter team member's email address",
+        message: "Enter team member's email address: ",
         name: "email",
         validate: emailInput => {
             if (emailInput) {
@@ -86,15 +86,15 @@ function addMember() {
     .then(function({name, role, id, email}) {
         let roleInfo = "";
         if (role === "Engineer") {
-            roleInfo = "GitHub username";
+            roleInfo = "GitHub username: ";
         } else if (role === "Intern") {
-            roleInfo = "school name";
+            roleInfo = "school name: ";
         } else {
-            roleInfo = "office phone number";
+            roleInfo = "office phone number: ";
         }
         inquirer.prompt([{
             type: 'input',
-            message: `Enter team member's ${roleInfo}`,
+            message: `Enter team member's ${roleInfo}: `,
             name: "roleInfo",
             validate: emailInput => {
                 if (emailInput) {
