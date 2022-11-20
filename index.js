@@ -1,4 +1,4 @@
-// const generatePage = require('./src/generatePage');
+const generatePage = require('./lib/generatePage');
 
 const Employee = require('./lib/Employee'); 
 const Manager = require('./lib/Manager');
@@ -18,7 +18,6 @@ function addMember() {
         type: "list",
         message: "Select member's role",
         choices: [
-            "Employee",
             "Engineer",
             "Intern",
             "Manager"
