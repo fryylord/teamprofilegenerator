@@ -136,7 +136,7 @@ function addMember() {
                 </div>
             </div>`;
             } else {
-                const officePhone = member.getOfficeNumber();
+                const officePhone = member.getOffice();
                 data = `<div class="col-6">
                 <div class="card mx-auto mb-3" style="width: 18rem">
                 <h5 class="card-header">${name}<br /><br />Manager</h5>
@@ -149,7 +149,7 @@ function addMember() {
             </div>`
             }
             console.log("adding team member");
-            fs.appendFile("./output/team.html", data, function (err) {
+            fs.appendFile("./dist/team.html", data, function (err) {
                 if (err) {
                     return reject(err);
                 };
@@ -171,7 +171,7 @@ function addMember() {
     </body>
     </html>`;
     
-        fs.appendFile("./output/team.html", html, function (err) {
+        fs.appendFile("./dist/team.html", html, function (err) {
             if (err) {
                 console.log(err);
             };
