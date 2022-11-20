@@ -1,13 +1,11 @@
 // node modules 
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-
-const generatePage = require('./lib/generatePage');
 const teamMembers = [];
-
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
+
 function startApp () {
     createHtml();
     addMember();
@@ -24,7 +22,7 @@ function createHtml() {
         <title>Team Profile</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark mb-5">
+        <nav class="navbar navbar-dark bg-success mb-5">
             <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
         </nav>
         <div class="container">
@@ -182,7 +180,6 @@ function addHtml(member) {
         </div>`
         }
             
-        console.log("adding team member");
         fs.appendFile("./dist/teamProfile.html", data, function (err) {
             if (err) {
                 return reject(err);
