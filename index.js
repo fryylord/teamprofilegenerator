@@ -94,7 +94,7 @@ function addMember() {
         }
         inquirer.prompt([{
             type: 'input',
-            message: `Enter team member's ${roleInfo}: `,
+            message: `Enter team member's ${roleInfo}`,
             name: "roleInfo",
             validate: emailInput => {
                 if (emailInput) {
