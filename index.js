@@ -1,4 +1,4 @@
-const generatePage = require('./src/generatePage');
+// const generatePage = require('./src/generatePage');
 
 const Employee = require('./lib/Employee'); 
 const Manager = require('./lib/Manager');
@@ -72,7 +72,7 @@ function addMember() {
                 if (moreMembers === "yes") {
                     addMember();
                 } else {
-                    finishHtml();
+                    return;
                 }
             });
             
