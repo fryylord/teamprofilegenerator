@@ -37,9 +37,9 @@ Cards will be created and inserted into teamProfile.html in the dist directory
 ## Credits
 
 https://ku.bootcampcontent.com/ku-coding-boot-camp/KU-VIRT-FSF-PT-09-2022-U-LOLC/  
-https://github.com/nicolewallace09/team-profile-generator/
-https://james-fisher-web-developer.herokuapp.com/pages/team-profile-generator.html/
-https://github.com/RyanEllingson/Team-Profile-Generator/
+https://github.com/nicolewallace09/team-profile-generator/  
+https://james-fisher-web-developer.herokuapp.com/pages/team-profile-generator.html/  
+https://github.com/RyanEllingson/Team-Profile-Generator/  
 
 
 ## License
