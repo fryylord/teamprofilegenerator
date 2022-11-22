@@ -196,9 +196,7 @@ function addHtml(member) {
     });}
     
     function finalizeHtml() {
-        const html = ` </div>
-        </div>
-        
+        const html = `
     </body>
     </html>`;
     fs.appendFile("./dist/teamProfile.html", html, function (err) {
