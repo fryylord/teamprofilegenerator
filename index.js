@@ -1,4 +1,4 @@
-// node modules 
+// Modules/Constants for page
 const fs = require('fs'); 
 const inquirer = require('inquirer');
 const teamMembers = [];
@@ -6,11 +6,13 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
 
+//Starts the application and creates the first part of the html
 function startApp () {
     startHtml();
     addMember();
 }
 
+//Function for creating the first part of the html
 function startHtml() {
     const html = `<!DOCTYPE html>
     <html lang="en">
@@ -34,6 +36,7 @@ function startHtml() {
     });
 }
 
+//Function that allows you to pick the role and enter relevant information
 function addMember() {
     inquirer.prompt([
     {
@@ -133,7 +136,8 @@ function addMember() {
             
         });
     })}
-    
+
+//Creates the html depending on the member selected
 function addHtml(member) {
     return new Promise(function(resolve, reject) {
         const name = member.getName();
@@ -196,6 +200,7 @@ function addHtml(member) {
         });
     });}
     
+    //adds the closing material for the rest of the webpage
     function finalizeHtml() {
         const html = `</div>
         </div>
@@ -207,4 +212,5 @@ function addHtml(member) {
         };
     });}
     
+    //initiates program
     startApp()
