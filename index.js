@@ -154,9 +154,9 @@ function addHtml(member) {
                 <h3>${name}<br /><br />🥽 Engineer</h3>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${id}</p>
-                <p class="email">Email:<a href="mailto:${email}"> ${email}</a></p>
-                <p class="school">gitHub Page: <a href="http://www.github.com/${gitHub}/"> ${gitHub}</a></p>
+                <p>ID: ${id}</p>
+                <p>Email:<a href="mailto:${email}"> ${email}</a></p>
+                <p>gitHub Page: <a href="http://www.github.com/${gitHub}/"> ${gitHub}</a></p>
             </div>
             </div>
         </div>`;
@@ -169,9 +169,9 @@ function addHtml(member) {
                     <h3>${name}<br /><br />🎓 Intern</h3>
                 </div>
                 <div class="card-body">
-                    <p class="id">ID: ${id}</p>
-                    <p class="email">Email:<a href="mailto:${email}"> ${email}</a></p>
-                    <p class="school">School: ${school}</p>
+                    <p>ID: ${id}</p>
+                    <p>Email:<a href="mailto:${email}"> ${email}</a></p>
+                    <p>School: ${school}</p>
                 </div>
         </div>
         </div>`;
@@ -184,9 +184,9 @@ function addHtml(member) {
                     <h3>${name}<br /><br />🍵 Manager</h3>
                 </div>
                 <div class="card-body">
-                    <p class="id">ID: ${id}</p>
-                    <p class="email">Email:<a href="mailto:${email}"> ${email}</a></p>
-                    <p class="school">Office Phone: ${officePhone}</p>
+                    <p>ID: ${id}</p>
+                    <p>Email:<a href="mailto:${email}"> ${email}</a></p>
+                    <p>Office Phone: ${officePhone}</p>
                 </div>
         </div>
         </div>`
