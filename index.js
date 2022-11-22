@@ -140,12 +140,13 @@ function addHtml(member) {
         const id = member.getId();
         const email = member.getEmail();
         let data = "";
+    
     if (role === "Engineer") {
         const gitHub = member.getGithub();
         data = `<div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header bg-primary text-light">
-                <h3>${name}<br /><br />🍵 Engineer</h3>
+                <h3>${name}<br /><br />🥽 Engineer</h3>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${id}</p>
@@ -155,12 +156,12 @@ function addHtml(member) {
             </div>
         </div>`;
         
-        } else if (role === "Intern") {
-            const school = member.getSchool();
+    } else if (role === "Intern") {
+        const school = member.getSchool();
             data = `    <div class="col-4 mt-4">
             <div class="card h-100">
                 <div class="card-header bg-primary text-light">
-                    <h3>${name}<br /><br />🍵 Intern</h3>
+                    <h3>${name}<br /><br />🎓 Intern</h3>
                 </div>
                 <div class="card-body">
                     <p class="id">ID: ${id}</p>
@@ -183,7 +184,7 @@ function addHtml(member) {
                     <p class="school">Office Phone: ${officePhone}</p>
                 </div>
         </div>
-    </div>`
+        </div>`
         }
             
         fs.appendFile("./dist/teamProfile.html", data, function (err) {
@@ -205,4 +206,5 @@ function addHtml(member) {
             console.log(err);
         };
     });}
+    
     startApp()
