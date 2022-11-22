@@ -35,7 +35,18 @@ function startHtml() {
 }
 
 function addMember() {
-    inquirer.prompt([{
+    inquirer.prompt([
+    {
+            type: "list",
+            message: "Select member's role: ",
+            choices: [
+                "Manager",
+                "Engineer",
+                "Intern",
+            ],
+            name: "role"
+    },
+    {
         type: 'input',
         message: "Enter member's name: ",
         name: "name",
@@ -47,16 +58,6 @@ function addMember() {
                 return false; 
             }
     },},
-    {
-        type: "list",
-        message: "Select member's role: ",
-        choices: [
-            "Engineer",
-            "Intern",
-            "Manager"
-        ],
-        name: "role"
-    },
     {
         type: 'input',
         message: "Enter team member's id: ",
