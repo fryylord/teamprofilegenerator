@@ -22,8 +22,8 @@ function startHtml() {
         <title>Team Profile</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark mb-5" style="background: red">
-            <span class="navbar-brand mb-0 h1 w-100 text-center">My Team</span>
+    <nav class="navbar navbar-dark mb-5" style="background: red; color: white">
+    <span class="mb-0 h1 w-100 text-center">My Team</span>
         </nav>
         <div class="container">
             <div class="row">`;
