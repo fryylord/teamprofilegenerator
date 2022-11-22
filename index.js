@@ -7,11 +7,11 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
 
 function startApp () {
-    createHtml();
+    startHtml();
     addMember();
 }
 
-function createHtml() {
+function startHtml() {
     const html = `<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -126,7 +126,7 @@ function addMember() {
                 if (moreMembers === "yes") {
                     addMember();
                 } else {
-                    finishHtml();
+                    finalizeHtml();
                 }
             });
             
@@ -188,7 +188,7 @@ function addHtml(member) {
         });
     });}
     
-    function finishHtml() {
+    function finalizeHtml() {
         const html = ` </div>
         </div>
         
