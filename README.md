@@ -1,7 +1,7 @@
 # Team Profile Generator
 # Solution for Module 10 Challenge
 
-This script has been created as a command line based tool for creating a README.md file.  It takes in user input and formats it using conventions expected in a professional README file.  Upon completion the information gathered is displayed, and a new file is created.   
+This script has been created as a command line based tool for creating a basic web page displaying team profile information.  After gathering the data to fill the contents, a page is created with a card for each team member, as well as basic formatting to display the card(s).
 
 
 ![](./media/screenshot.jpg)
@@ -22,26 +22,25 @@ In the command line in the root directory, type npm install allowing for the req
 
 After running the program the user is prompted with the following requests :
 
-What is the project title?  
-Describe your project  
-Give instructions for installation  
-How is thise site used?  
-Who else should be credited on this site?  
-Chose the appropriate license for this project  
-What are some features of your site?  
-What tests have you done?  
-Who is the contact for the site?  
-Please enter your GitHub username  
-Please enter your email  
+Select the member's role
+Enter member's name
+Enter team member's id
+enter team member's e-mail address
 
-After this information is gathered, it is used to generate a readme.md file within the output directory.
+Depending on the role the following question is as such :
+Manager - Enter team member's office phone number
+Engineer - Enter team member's Github user name
+Intern - Enter team member's scool
+
+Cards will be created and inserted into teamProfile.html in the dist directory
 
 ## Credits
 
 https://ku.bootcampcontent.com/ku-coding-boot-camp/KU-VIRT-FSF-PT-09-2022-U-LOLC/  
-https://github.com/jpd61/README-generator  
-https://www.james-fisher-web-developer.com/pages/readme-generator.html  
-https://github.com/connietran-dev/readme-generator  
+https://github.com/nicolewallace09/team-profile-generator/
+https://james-fisher-web-developer.herokuapp.com/pages/team-profile-generator.html/
+https://github.com/RyanEllingson/Team-Profile-Generator/
+
 
 ## License
  
@@ -71,8 +70,9 @@ SOFTWARE.
 
 Command line interface  
 Multiple libraries used  
-Asychronous function(s)
+Multiple successful jest tests
+Generated HTML File
 
 ## Tests
 
-None
+Jest
