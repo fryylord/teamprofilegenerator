@@ -22,17 +22,17 @@ In the command line in the root directory, type npm install allowing for the req
 
 After running the program the user is prompted with the following requests :
 
-Select the member's role
-Enter member's name
-Enter team member's id
-enter team member's e-mail address
+Select the member's role  
+Enter member's name  
+Enter team member's id  
+enter team member's e-mail address  
 
-Depending on the role the following question is as such :
-Manager - Enter team member's office phone number
-Engineer - Enter team member's Github user name
-Intern - Enter team member's scool
+Depending on the role the following question is as such :  
+Manager - Enter team member's office phone number  
+Engineer - Enter team member's Github user name  
+Intern - Enter team member's scool  
 
-Cards will be created and inserted into teamProfile.html in the dist directory
+Cards will be created and inserted into teamProfile.html in the dist directory  
 
 ## Credits
 
