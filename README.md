@@ -70,7 +70,7 @@ SOFTWARE.
 
 Command line interface  
 Multiple libraries used  
-Multiple successful jest tests
+Multiple successful jest tests  
 Generated HTML File
 
 ## Tests
